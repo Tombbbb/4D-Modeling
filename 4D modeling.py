@@ -28,8 +28,7 @@ brown = (139,69,19)
 
 pygame.init()
 output_ = pygame.display.set_mode((1440, 720))
-pygame.display.set_caption("4D modeling Output")
-clock = pygame.time.Clock()
+pygame.display.set_caption("4D modelling Output")
 
 output_.fill(white)
 
@@ -270,11 +269,11 @@ def fsm_ui(ui_change):
 
             for i in range(0, int(rotno)):
                 count=0
-                for j in h[0]:
+                for i in h[0]:
                     count2 = 1
-                    for k in sliderlist:
-                        if k != 0:
-                            h[0][count] = matrix(count2, h[0][count], k)
+                    for j in sliderlist:
+                        if j != 0:
+                            h[0][count] = matrix(count2, h[0][count], j)
                         count2 += 1
                     count += 1
                     #rotates the object using the matrix function I created
